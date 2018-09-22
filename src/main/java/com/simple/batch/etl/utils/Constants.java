@@ -6,7 +6,6 @@ public class Constants {
 	public static final String HIVE_USER = "vagrant";
 	public static final String HIVE_PASSWORD = "";
 	
-	
 	public static final String ENRICHED_TRIP_QUERY = "SELECT " + 
 			"t.route_id, t.service_id, t.trip_id, t.trip_headsign, t.wheelchair_accessible, t.shape_id, t.note_fr, t.note_en, " + 
 			"cd.`date`, cd.exception_type, " + 
