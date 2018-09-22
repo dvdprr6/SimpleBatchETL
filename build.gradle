@@ -9,14 +9,15 @@ repositories {
 }
 
 dependencies {
+  compile fileTree(dir: 'lib', include: '*.jar')
+
+  
   compile group: 'org.apache.hadoop', name: 'hadoop-common', version: '2.7.7'
   compile group: 'org.apache.hadoop', name: 'hadoop-client', version: '2.7.7'
-  compile group: 'org.apache.hadoop', name: 'hadoop-mapreduce-client-core', version: '2.7.7'
-  
+    
   compile group: 'org.apache.hbase', name: 'hbase-client', version: '2.1.0'
   compile group: 'org.apache.hbase', name: 'hbase-common', version: '2.1.0'
-  
-  compile group: 'org.apache.hive', name: 'hive-jdbc', version: '2.3.3'
+
 }
 
 jar{
