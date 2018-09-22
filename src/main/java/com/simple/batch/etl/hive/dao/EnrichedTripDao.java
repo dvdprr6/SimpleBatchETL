@@ -18,7 +18,7 @@ public class EnrichedTripDao implements HiveDao<EnrichedTrip> {
 
 	@Override
 	public List<EnrichedTrip> getAll() {
-		List<EnrichedTrip> enrichedTripDate = new ArrayList<EnrichedTrip>();
+		List<EnrichedTrip> enrichedTripData = new ArrayList<EnrichedTrip>();
 		
 		try {
 			PreparedStatement preparedStatement = HiveConnection.getHiveConnection().prepareStatement(Constants.ENRICHED_TRIP_QUERY);
@@ -39,7 +39,7 @@ public class EnrichedTripDao implements HiveDao<EnrichedTrip> {
 				enrichedTrip.setStartTime(resultSet.getString(Constants.ENRICHED_TRIP_START_TIME));
 				enrichedTrip.setEndTime(resultSet.getString(Constants.ENRICHED_TRIP_END_TIME));
 				enrichedTrip.setHeadwaySecs(resultSet.getString(Constants.ENRICHED_TRIP_HEADWAY_SECS));
-				enrichedTripDate.add(enrichedTrip);
+				enrichedTripData.add(enrichedTrip);
 			}
 			
 			resultSet.close();
@@ -47,7 +47,7 @@ public class EnrichedTripDao implements HiveDao<EnrichedTrip> {
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
-		return enrichedTripDate;
+		return enrichedTripData;
 	}
 
 }

@@ -2,7 +2,7 @@ package com.simple.batch.etl.utils;
 
 public class Constants {
 	public static final String HIVE_JDBC_DRIVER = "org.apache.hive.jdbc.HiveDriver";
-	public static final String HIVE_URL = "jdbc:hive2://localhost:10000/gtfs_stm";
+	public static final String HIVE_URL = "jdbc:hive2://localhost:10000/course4_project";
 	public static final String HIVE_USER = "vagrant";
 	public static final String HIVE_PASSWORD = "";
 	
@@ -16,7 +16,7 @@ public class Constants {
 			"JOIN " + 
 			"ext_calendar_dates cd on t.service_id=cd.service_id " + 
 			"JOIN " + 
-			"ext_frequencies f on t.trip_id=f.trip_id;";
+			"ext_frequencies f on t.trip_id=f.trip_id";
 	public static final String ENRICHED_TRIP_ROUTE_ID = "route_id";
 	public static final String ENRICHED_TRIP_SERVICE_ID = "service_id";
 	public static final String ENRICHED_TRIP_TRIP_ID = "trip_id";
