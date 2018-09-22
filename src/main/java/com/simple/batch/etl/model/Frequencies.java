@@ -1,6 +1,6 @@
 package com.simple.batch.etl.model;
 
-public class Frequencies {
+public class Frequencies implements Model{
 	private String tripId;
 	private String startTime;
 	private String endTime;

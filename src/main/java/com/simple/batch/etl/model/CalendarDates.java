@@ -1,6 +1,6 @@
 package com.simple.batch.etl.model;
 
-public class CalendarDates {
+public class CalendarDates implements Model{
 	private String serviceId;
 	private String date;
 	private String exceptionType;

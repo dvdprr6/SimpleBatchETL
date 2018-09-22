@@ -1,6 +1,6 @@
 package com.simple.batch.etl.model;
 
-public class Trips {
+public class Trips implements Model{
 	private String routeId;
 	private String serviceId;
 	private String tripId;
