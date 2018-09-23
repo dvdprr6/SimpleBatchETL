@@ -1,7 +1,6 @@
 package com.simple.batch.etl.hbase.dao;
 
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
