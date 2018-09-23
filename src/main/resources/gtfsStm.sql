@@ -53,3 +53,9 @@ JOIN
   ext_calendar_dates cd on t.service_id=cd.service_id
 JOIN
   ext_frequencies f on t.trip_id=f.trip_id;
+  
+  
+-- HBASE SHELL COMMAND
+-- disable 'C4P:TRIP'
+-- drop 'C4P:TRIP'
+-- create 'C4P:TRIP', {NAME => 'T', VERSIONS => 5}, {NAME => 'CD', VERSIONS => 5}, {NAME => 'F', VERSIONS => 5}
