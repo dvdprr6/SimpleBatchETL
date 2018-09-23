@@ -62,4 +62,6 @@ public class Constants {
 	public static final String ENRICHED_TRIP_END_TIME = "endTime";
 	public static final String ENRICHED_TRIP_HEADWAY_SECS = "headwaySecs";
 	
+	public static final String STOP_TIMES_FILE = "/home/vagrant/gtfs_stm/stop_times.txt";
+	
 }
