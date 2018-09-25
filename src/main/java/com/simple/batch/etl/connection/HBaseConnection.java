@@ -13,7 +13,7 @@ public class HBaseConnection {
 		
 	}
 	
-	public static ClusterConnection getHBaseConnection() {
+	public static synchronized ClusterConnection getHBaseConnection() {
 		if(clusterConnection == null) {
 			try {
 				clusterConnection = (ClusterConnection) ConnectionFactory.createConnection(new Configuration());
