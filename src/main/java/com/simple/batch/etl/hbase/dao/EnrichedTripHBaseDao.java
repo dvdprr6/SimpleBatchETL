@@ -15,7 +15,6 @@ import com.simple.batch.etl.connection.HBaseConnection;
 import com.simple.batch.etl.model.CalendarDates;
 import com.simple.batch.etl.model.EnrichedTrips;
 import com.simple.batch.etl.model.Frequencies;
-import com.simple.batch.etl.model.Model;
 import com.simple.batch.etl.model.Trips;
 import com.simple.batch.etl.utils.Constants;
 
@@ -32,11 +31,9 @@ public class EnrichedTripHBaseDao implements HBaseDao<EnrichedTrips>{
 	
 	@Override
 	public void insert(List<EnrichedTrips> model) {
-		long rowNumber = 0;
 		List<Put> enrichedTripPuts = new ArrayList<Put>();
 		
 		for(EnrichedTrips enrichedTrip : model) {
-			//Put put = new Put(Bytes.toBytes("row-" + rowNumber++));
 			Put put = new Put(Bytes.toBytes(enrichedTrip.getTrip().getTripId()));
 			
 			put = putIntoTripColumnFamily(enrichedTrip, put);
