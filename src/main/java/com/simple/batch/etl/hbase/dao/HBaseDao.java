@@ -6,4 +6,5 @@ import com.simple.batch.etl.model.Model;
 
 public interface HBaseDao<MODEL extends Model> {
 	public void insert(List<MODEL> model);
+	public MODEL getById(String id);
 }
