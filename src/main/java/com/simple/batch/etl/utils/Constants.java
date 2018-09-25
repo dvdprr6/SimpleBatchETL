@@ -30,6 +30,12 @@ public class Constants {
 	public static final String HIVE_ENRICHED_TRIP_END_TIME = "end_time";
 	public static final String HIVE_ENRICHED_TRIP_HEADWAY_SECS = "headway_secs";
 	
+	public static final String HIVE_ENRICHED_STOP_TIMES_TRIP_ID = HIVE_ENRICHED_TRIP_TRIP_ID;
+	public static final String HIVE_ENRICHED_STOP_TIMES_ARRIVAL_TIME = "arrival_time";
+	public static final String HIVE_ENRICHED_STOP_TIMES_DEPARTURE_TIME = "departure_time";
+	public static final String HIVE_ENRICHED_STOP_TIMES_STOP_ID = "stop_id";
+	public static final String HIVE_ENRICHED_STOP_SEQUENCE = "stop_sequence";
+	
 	public static final String HBASE_TRIP_TABLE = "C4P:TRIP";
 	public static final String HBASE_TRIP_COLUMN_FAMILY_TRIP = "T";
 	public static final String HBASE_TRIP_COLUMN_FAMILY_CALENDAR_DATES = "CD";
@@ -48,20 +54,7 @@ public class Constants {
 	public static final String HBASE_TRIP_QUALIFIER_TRIP_END_TIME = "end_time";
 	public static final String HBASE_TRIP_QUALIFIER_TRIP_HEADWAY_SECS = "headway_secs";
 	
-	public static final String ENRICHED_TRIP_MODEL_ROUTE_ID = "routeId";
-	public static final String ENRICHED_TRIP_MODEL_SERVICE_ID = "serviceId";
-	public static final String ENRICHED_TRIP_MODEL_TRIP_ID = "tripId";
-	public static final String ENRICHED_TRIP_MODEL_TRIP_HEADSIGN = "tripHeadsign";
-	public static final String ENRICHED_TRIP_MODEL_WHEELCHAIR_ACCESSIBLE = "wheelchairAccessible";
-	public static final String ENRICHED_TRIP_MODEL_SHAPE_ID = "shapeId";
-	public static final String ENRICHED_TRIP_NOTE_FR = "noteFr";
-	public static final String ENRICHED_TRIP_NOTE_EN = "noteEn";
-	public static final String ENRICHED_TRIP_DATE = "date";
-	public static final String ENRICHED_TRIP_EXCEPTION_TYPE = "exceptionType";
-	public static final String ENRICHED_TRIP_START_TIME = "startTime";
-	public static final String ENRICHED_TRIP_END_TIME = "endTime";
-	public static final String ENRICHED_TRIP_HEADWAY_SECS = "headwaySecs";
-	
-	public static final String STOP_TIMES_FILE = "/home/vagrant/gtfs_stm/stop_times.txt";
+	public static final String STOP_TIMES_FILE = "/home/vagrant/SimpleBatchETL/gtfs_stm/stop_times.txt";
+	public static final String ENRICHED_STOP_TIMES_FILE = "/home/vagrant/SimpleBatchETL/gtfs_stm/enriched_stop_times.txt";
 	
 }
